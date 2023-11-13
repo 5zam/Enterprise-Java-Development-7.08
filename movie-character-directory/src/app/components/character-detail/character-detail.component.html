@@ -1,0 +1,24 @@
+
+ <p>character-detail works!</p>
+ 
+ <!-- <h1>Character List</h1>
+ <ul>
+   <li *ngFor="let character of characters" (click)="onCharacterSelected(character)">
+     {{ character.name }}
+   </li>
+ </ul>
+ <app-detail *ngIf="selectedCharacter" [character]="selectedCharacter" (onCharacterDeletedEvent)="onCharacterDeleted($event)"></app-detail> -->
+
+ <h2>Character Details</h2>
+ <div *ngIf="character">
+   <h3>{{ character.name }}</h3>
+   <p>ID: {{ character.id }}</p>
+   <p>Occupation: {{ character.occupation }}</p>
+   <p>Weapon: {{ character.weapon }}</p>
+   <p>Debt: {{ character.debt ? 'Yes' : 'No' }}</p>
+   <button (click)="onCharacterDeleted()">Delete</button>
+ </div>
+
+ <!-- <div *ngIf="showSuccessMessage" class="success-message">
+  Character deleted successfully!
+</div> -->

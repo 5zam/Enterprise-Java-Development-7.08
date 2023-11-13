@@ -1,0 +1,63 @@
+.success-message {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  display: none; /* Initially hidden */
+}
+
+.success-message.show {
+  display: block; /* Show when 'showSuccessMessage' is true */
+}
+
+/*-----------
+/* Character details container */
+.character-details {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Character details heading */
+.character-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Character details paragraph */
+.character-paragraph {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Delete button */
+.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+/* Success message */
+.success-message {
+  color: #28a745;
+  font-size: 18px;
+  margin-top: 20px;
+}
+

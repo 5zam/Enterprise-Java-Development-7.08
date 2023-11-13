@@ -1,0 +1,16 @@
+<!-- <ul>
+  <li *ngFor="let character of characters" (click)="selectCharacter(character)">{{ character.name }}</li>
+</ul> -->
+
+<!-- <p>characters list work!</p>
+<ul>
+  <li *ngFor="let character of characters" (click)="selectCharacter(character)">{{ character.name }}</li>
+</ul> -->
+
+<h1>Character List</h1>
+<ul>
+  <li *ngFor="let character of characters" (click)="onCharacterSelected(character)">
+    {{ character.name }}
+  </li>
+</ul>
+<app-character-detail *ngIf="selectedCharacter" [character]="selectedCharacter" (onCharacterDeletedEvent)="onCharacterDeleted($event)"></app-character-detail>

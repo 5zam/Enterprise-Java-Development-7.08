@@ -1,0 +1,97 @@
+/* Add styles to format the character list */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* Add hover effect */
+li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Add selected style */
+li.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Add styles to the character list container */
+.character-list-container {
+  width: 300px;
+  margin-right: 20px;
+}
+
+/* Add styles to center the character list */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Add styles for loading indicator */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 18px;
+}
+
+/* Add styles for error message */
+.error-message {
+  color: red;
+  font-size: 18px;
+}
+
+/*------------
+/* Container for character list */
+.character-list-container {
+    width: 300px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Character list item */
+  .character-item {
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .character-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Selected character */
+  .selected-character {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Loading indicator */
+  .loading {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  /* Error message */
+  .error-message {
+    color: #ff6347;
+    font-size: 18px;
+  }
+  
+  
